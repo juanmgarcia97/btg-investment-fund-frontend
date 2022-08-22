@@ -1,0 +1,18 @@
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 2px 2px 1px rgba(204, 224, 255, 0.2);
+  background-color: white;
+  border-bottom: 2px solid lightgray;
+  img {
+    max-width: 100%;
+    height: min-content;
+    align-self: center;
+  }
+}
+.actions {
+  width: fit-content;
+  align-self: center;
+  gap: 2rem;
+}
