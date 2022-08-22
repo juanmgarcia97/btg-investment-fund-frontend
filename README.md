@@ -1,27 +1,26 @@
-# FrontendProject
+# btgpactual-investments-funds
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+## Configuración del ambiente
+En el Backend se deben ingresar las variables de entorno de la siguiente forma:
+  - DB_HOST=`<host>`: host de la base de datos.
+  - DB_PORT=`<puerto>`: puerto de la base de datos.
+  - DB_NAME=`<name>`: puede ser cualquier nombre.
+  - API_PORT=`<port>`: por defecto usar 3000, para evitar errores con el front.
 
-## Development server
+De igual manera este archivo se encuentra en el repositorio, con los respectivos datos usados en el desarrollo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Intrucciones Backend
 
-## Code scaffolding
+- ### Instalación
+El proyecto fue desarrollado en Node.js con TypeScript y Express, es necesario tener Node en una versión actualizada, yo utilicé la [16](https://nodejs.org/es/download/) y el gestor de paquetes de Node, NPM, mayor a la 8 (que viene con Node por defecto). De igual forma, el proyecto utiliza [Mongoose](https://mongoosejs.com/docs/guide.html).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ### Ejecución
+El proyecto corre por defecto en el puerto `3000`, si requiere cambiar este puerto deberá ingresar al archivo `index.ts` dentro de la carpeta `src`. Si no es el caso puede seguir a instalar las dependencias del proyecto usando el comando `npm install` en la consola, ubicándose dentro de la carpeta `backend-project`. Al finalizar la instalación resta usar el comando `npm start` para correr el proyecto.
 
-## Build
+## Intrucciones Frontend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ### Instalación
+El proyecto fue desarrollado en Angular en su versión [14](https://angular.io/docs) y [Angular Material](https://material.angular.io/guides) es recomendable descargar el CLI de Angular usando el comando `npm install -g @angular/cli`.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- ### Ejecución
+El proyecto corre por defecto en el puerto `4200`. Para instalar las dependencias se debe usar el comando `npm install` en la consola, ubicándose dentro de la carpeta `frontend-project`. Al finalizar la instalación resta usar el comando `npm run serve` para correr el proyecto y abrir el navegador para usarlo, escribiendo en la barra de búsqueda `localhost:4200`.
